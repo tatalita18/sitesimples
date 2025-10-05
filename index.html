@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br>">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title> Talita | Meu Portfólio</title>
+  <link rel="icon" href="img/logo inicio.png">
+  <script src="script/script.js" defer></script>
+
+
+</head>
+
+
+<body>
+  <header>
+  <nav class="navbar">
+
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+    <img src="img/logo inicio.png" alt="imagem">
+    <div class="nometop">
+      <h1> Talita | Meu Portfólio </h1>
+    </div>
+    <ul class="menu">
+      <li><a href="#sobre">• Sobre Mim</a></li>
+      <li><a href="#galeria">• Galeria</a></li>
+      <li><a href="#contato"> • Contato</a></li>
+    </ul>
+
+  </nav>
+  </header>
+
+<section id="sobre">
+    <div class="sobreeu-text">
+      <div class="topogaleria">
+      <h2>Sobre Mim</h2>
+      <p>Olá, Meu nome é Talita, Sou estudante de informática e estou no meu último ano no colégio, espero que goste do meu
+      Site | Galeria!
+      </p>
+    </div>
+    <div class="sobreeu-img">
+      <img src="img/sobremim.jpg" alt="Eu Talita">
+    </div>
+  </section>
+
+  
+
+  <section id="galeria">
+    <div class="topogaleria">
+
+    <h2>Minha Galeria</h2>
+
+  </div>
+  <div class="galeria">
+    <!-- Imagem principal -->
+    <img id="mainImage" src="img/eueminhassobrinhas.jpg" alt="Imagem Principal">
+
+    <!-- Botões -->
+    <div class="buttons">
+      <button class="btn active" onclick="trocarImagem(0)">1</button>
+      <button class="btn" onclick="trocarImagem(1)">2</button>
+      <button class="btn" onclick="trocarImagem(2)">3</button>
+      <button class="btn" onclick="trocarImagem(3)">4</button>
+      <button class="btn" onclick="trocarImagem(4)">5</button>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+
+  <h2>Contato</h2>
+  <form id="form-contato">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+
+</section>
+
+
+
+</body>  
+<footer class="site-footer">
+    <div class="content">
+
+        <hr>
+
+        <p class="copyright">
+            © 2025 Talita | Meu Portfólio. Todos os direitos reservados. <br>
+            Este conteúdo tem fins estudantis.
+            <button onclick="mudarTema()">Mudar Tema</button>
+        </p>
+
+    </div>
+</footer>
+
+
+</footer>
+
+</html>

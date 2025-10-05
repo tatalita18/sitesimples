@@ -1,0 +1,345 @@
+html{
+  scroll-behavior: smooth;
+}
+
+/*Topo do ínicio onde fica o rodapé*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.navbar {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  background: linear-gradient(90deg, #ad2ced, #00c9ff);
+  color: rgb(255, 255, 255);
+  border-style: ridge;
+  border-color: rgb(9, 0, 73);
+  border-width: thick;
+
+}
+
+.navbar img {
+  width: 150px;
+  height: 150px;
+}
+
+.nometop {
+  font-family: BlinkMacSystemFont;
+}
+
+.navbar h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+  color: #1a045c;
+
+
+}
+
+/* Botão sanduíche (oculto em telas grandes) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsivo: telas pequenas */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* esconde o menu */
+    flex-direction: column;
+    background: #5e2b97;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .menu.show {
+    display: flex; /* mostra quando ativo */
+  }
+
+  .menu-toggle {
+    display: block; /* aparece o botão ☰ */
+  }
+}
+
+/*Parte do sobre*/
+
+#sobre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 50px;
+}
+
+.sobreeu-text {
+  max-width: 500px;
+}
+
+.sobreeu-text h2 {
+  font-size: 2.2em;
+  color: #4a148c;
+}
+
+.sobreeu-text p {
+  font-size: 1.1em;
+  margin: 20px 0;
+}
+
+.sobreeu-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #5f2eea;
+  box-shadow: 0 0 20px #00c9ff;
+}
+
+.sobreeu-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.topoinicio {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.topoinicio h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #4a148c;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/*Parte da Galeria de fotos*/
+
+#galeria {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 350px;   /* largura fixa */
+  height: 400px;  /* altura fixa */
+  object-fit: cover; /* corta a imagem sem deformar */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 8px 14px;
+  margin: 5px;
+  border: none;
+  background-color: blueviolet ;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #1d0056;
+}
+
+.btn.active {
+  background-color: blueviolet;
+  color: white;
+}
+
+.topogaleria {
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.topogaleria h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #4a148c;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  
+}
+
+/* Linha decorativa embaixo do nome*/
+
+.topogaleria h2::after {
+  content: "";
+  display: flex;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, #7b1fa2, #ba68c8, #e1bee7);
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* ===== Seção Contato ===== */
+#contato {
+  background-color: #f9f5ff; /* lilás claro */
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(128, 0, 128, 0.2);
+}
+
+#contato h2 {
+  color: #5e2b97; /* roxo escuro */
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+#form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#form-contato label {
+  text-align: left;
+  font-weight: bold;
+  color: #4b0082;
+}
+
+#form-contato input,
+#form-contato textarea {
+  padding: 10px;
+  border: 2px solid #b57edc; 
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+#form-contato input:focus,
+#form-contato textarea:focus {
+  border-color: #7a1fa2; 
+  box-shadow: 0 0 5px #7a1fa2;
+}
+
+#form-contato button {
+  background: linear-gradient(90deg, #ad2ced, #00c9ff);
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#form-contato button:hover {
+  background-color: #5e2b97;
+}
+
+/*Dideitos Autorais*/
+
+.site-footer {
+    background: linear-gradient(90deg, #ad2ced, #00c9ff);
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+.site-footer h3{
+    margin-top: 0;
+    color: black;
+} 
+.site-footer p{
+    margin: 10px 0;
+    color:rgb(255, 255, 255);
+    font-size: 14px;
+}
+ .site-footer a:hover{
+        text-decoration: underline;
+ }
+ .site-footer hr{
+    margin: 2opx auto;
+    width: 60%;
+    border-top: 1px solid white;
+ }
+ @media (max-width: 600px){
+    .site-footer{
+        font-size: 13px;
+    }
+ }
+
+ footer button {
+  margin-top: 10px;
+  background-color: #1dffff;
+  color: rgb(24, 9, 9);
+  font-size: 16px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer button:hover {
+  background-color: #3d42b1;
+}
+
+
+
+/* ===== MODO ESCURO ===== */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* Títulos, textos e links em branco no modo escuro */
+.dark-mode h1,
+.dark-mode p,
+.dark-mode label,
+.dark-mode a {
+  color: white;
+}
+
+/* h2 fica lilás quando o fundo for preto */
+.dark-mode h2 {
+  color: #c77dff; /* tom lilás bonito 💜 */
+}
