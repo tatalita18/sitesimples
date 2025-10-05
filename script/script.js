@@ -12,11 +12,11 @@ menuToggle.addEventListener("click", () => {
 
 // Lista das imagens
 const imagens = [
-  "../img/eueminhassobrinhas.jpg",
-  "../img/mylove.jpg",
-  "../img/eueminieu.jpg",
-  "../img/cacau1.jpg",
-  "../img/cacau2.jpg"
+  "img/eueminhassobrinhas.jpg",
+  "img/mylove.jpg",
+  "img/eueminieu.jpg",
+  "img/cacau1.jpg",
+  "img/cacau2.jpg"
 ];
 
 function trocarImagem(index) {
@@ -57,4 +57,5 @@ document.getElementById("form-contato").addEventListener("submit", function(even
 //Mudar Tema
 function mudarTema() {
   document.body.classList.toggle("dark-mode");
+
 }
